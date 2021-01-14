@@ -19,7 +19,7 @@
  <div>
  <h2>Formulario de pedido</h2>
 
-<form action="/action_page.php">
+<form action="">
   <label for="fname">primer nombre:</label><br>
   <input type="text" id="fname" name="fname" value="John"><br>
   <label for="lname">segundo nombre:</label><br>
@@ -28,8 +28,15 @@
   <input type="text" id="direccion" name="direccion" value="valle el alto"><br><br>
   <label for="lname">numero direccion:</label><br>
   <input type="text" id="Ndire" name="Ndire" value="841"><br><br>
-  <input type="submit" value="Submit">
+  <label for="fname">Correo electronico</label><br>
+  <input type="text" id="correo" name="correo" value="example@gmail.com"><br>
+  <input type="submit" onclick="enviarFormulario()" value="Submit">
 </form> 
+<script>
+  (function enviarFormulario(){
+    alert("enviando formulario...");
+  }())
+</script>
 
 
 </div>
