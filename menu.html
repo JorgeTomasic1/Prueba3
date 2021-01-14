@@ -16,8 +16,8 @@
     <li><a href="contacto.html"> Contacto</a></li>
  </ul>
  </div>
-    
- <nav class="navegacion">
+  <div class=mmenu>  
+ 	<nav class="navegacion">
 			<ul class="menu">
 				<li><a href="menu_vegetariano.html">almuerzos vegetariano</a>
                     <ul class="submenu">
@@ -43,7 +43,32 @@
 				
 			</ul>
 		</nav>
+	</div>
+	<h2 class="w3-center">Menus</h2>
 
+<div class="slider" style="max-width:800px">
+  <img class="mySlides" src="imagenes/carna.jpg" style="width:100%">
+  <img class="mySlides" src="imagenes/pollo.jpg" style="width:100%">
+  <img class="mySlides" src="imagenes/restaurant.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+	
 
        
 

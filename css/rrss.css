@@ -1,8 +1,41 @@
 body {
     font-family: latina;
     color: white;
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0)), url(https://cdn.atrapalo.com/common/photo/res/51283/0/ticr_890_370.jpg)no-repeat;
+    background: whitesmoke;
     background-size: cover;
+}
+
+.box ul li {
+    width: 120px;
+    float: left;
+    margin: 10px auto;
+    text-align: center
+}
+
+.box ul li a {
+    color: darkgray;
+}
+
+.box ul li:hover {
+    background-color: blackgray;
+}
+
+.box ul li a:hover {
+    color: red;
+}
+
+.wd {
+    width: 300px;
+    height: 539px;
+    background-color: black;
+    opacity: 0.9;
+    padding: 100px;
+}
+
+.wd h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100px;
 }
 
 .fa {
@@ -58,73 +91,4 @@ body {
     background: #fffc00;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.fa-skype {
-    background: #00aff0;
-    color: white;
-}
-
-.fa-android {
-    background: #a4c639;
-    color: white;
-}
-
-.fa-dribbble {
-    background: #ea4c89;
-    color: white;
-}
-
-.fa-vimeo {
-    background: #45bbff;
-    color: white;
-}
-
-.fa-tumblr {
-    background: #2c4762;
-    color: white;
-}
-
-.fa-vine {
-    background: #00b489;
-    color: white;
-}
-
-.fa-foursquare {
-    background: #45bbff;
-    color: white;
-}
-
-.fa-stumbleupon {
-    background: #eb4924;
-    color: white;
-}
-
-.fa-flickr {
-    background: #f40083;
-    color: white;
-}
-
-.fa-yahoo {
-    background: #430297;
-    color: white;
-}
-
-.fa-soundcloud {
-    background: #ff5500;
-    color: white;
-}
-
-.fa-reddit {
-    background: #ff5700;
-    color: white;
-}
-
-.fa-rss {
-    background: #ff6600;
-    color: white;
-}
-
-.rrss {
-    background-color: gray;
 }
