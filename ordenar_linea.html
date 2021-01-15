@@ -18,19 +18,21 @@
  </div>
  <div>
  <h2>Formulario de pedido</h2>
-
-<form action="">
+<script src="formulario.js"></script>
+<form action="#" onsubmit="return validacion(); ">
   <label for="fname">primer nombre:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
+  <input type="text" id="fname" name="fname"  required><br>
   <label for="lname">segundo nombre:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <label for="lname">direccion:</label><br>
-  <input type="text" id="direccion" name="direccion" value="valle el alto"><br><br>
-  <label for="lname">numero direccion:</label><br>
-  <input type="text" id="Ndire" name="Ndire" value="841"><br><br>
-  <label for="fname">Correo electronico</label><br>
-  <input type="text" id="correo" name="correo" value="example@gmail.com"><br>
-  <input type="submit" onsubmit="validacion()" onclick="enviarFormulario()" value="Enviar">
+  <input type="text" id="lname" name="lname"  required><br><br>
+  <label for="direccion">direccion:</label><br>
+  <input type="text" id="direccion" name="direccion"  required><br><br>
+  <label for="Nnume">numero direccion:</label><br>
+  <input type="text" id="Ndire" name="Ndire"  required><br><br>
+  <label for="correo">Correo electronico</label><br>
+  <input type="text" id="correo" name="correo" value="example@gmail.com"required><br>
+  <label for="fnaci">Fecha nacimiento</label><br>
+  <input type="date" id="fnaci" name="fnaci" required><br>
+  <input type="submit"  onclick="enviarFormulario()" value="Enviar">
 </form> 
 
 

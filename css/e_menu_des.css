@@ -62,3 +62,7 @@ header {
     visibility: visible;
     opacity: 1;
 }
+
+.slider {
+    margin: 4px;
+}
