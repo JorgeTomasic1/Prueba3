@@ -48,3 +48,22 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
+
+.easyzoom {
+    float: left;
+}
+
+.easyzoom img {
+    display: block;
+}
+
+
+/* Shrink wrap strategy 2 */
+
+.easyzoom {
+    display: inline-block;
+}
+
+.easyzoom img {
+    vertical-align: bottom;
+}

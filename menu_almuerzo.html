@@ -4,6 +4,7 @@
 <title>Menu</title>
 <link rel="stylesheet" type="text/css" href="css/estilomenu.css">
 <link rel="stylesheet" type="text/css" href="css/e_menu_des.css">
+
 </head>
 <body>
 <center><h2> Bienvenido al menu </center></h2>
@@ -44,11 +45,19 @@
 			</ul>
  </nav>
 
- <div><img src="imagenes/carna.jpg"> <h3>pollo con verduras</h3>
-	<img src="imagenes/arroz.jpg"> <h3>arroz</h3>
- </div>
- 
-
+ 	<div class="easyzoom">
+	 	<a href="imagenes/carna.jpg"></a>
+ 		<img src="imagenes/carna.jpg"> <h3>pollo con verduras</h3></div>
+	<div class="easyzoom">
+		<a href="imagenes/arroz.jpg"></a>
+		<img src="imagenes/arroz.jpg"> <h3>arroz</h3>
+ 	</div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src=js/easyzoom.js>  </script>
+<script>var $easyzoom = $('.easyzoom').easyZoom();
+	var api= $easyzoom.data('easyZomoom');
+</script>
 
        
 

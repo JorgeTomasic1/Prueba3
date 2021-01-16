@@ -5,7 +5,7 @@ function validacion() {
     var correo = document.getElementById('correo').value;
     var Ndire = document.getElementById('Ndire').value;
     var fnaci = document.getElementById('fnaci').value;
-
+    var nmrcelular = document.getElementById('nmrcelular').value;
     if (fname.value == "") {
         alert("ingrese su primer nombre");
         fname.focus();
@@ -36,8 +36,15 @@ function validacion() {
         fnaci.focus();
         return false;
     }
+    if (nmrcelular.value == "") {
+        alert("ingrese su numero celular");
+        nmrcelular.focus();
+        return false;
+    }
 }
 
-function enviarFormulario() {
-    alert("enviando formulario...")
-}
+$(function() {
+    $("#btnLimpiar").clic(function() {
+        $('input').val('');
+    });
+});
