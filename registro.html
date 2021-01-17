@@ -55,7 +55,7 @@
                
                   <script src="formulario.js"></script>
 
-                  <form action="#" onsubmit="return validacion(); " class="formulario">
+                  <form action="#" onsubmit="return validacion(); " id="formregistro">
                     <label for="fname"> nombre:</label><br>
                     <input type="text" id="fname" name="fname" placeholder="ingrese su  nombre completo" required><br>
                     <label for="direccion">direccion:</label><br>
@@ -69,45 +69,32 @@
                     <label for="nmrcelular" >Numero celular</label><br>
                     <input type="tel" id="nmrcelular " name="nmrcelular" placeholder="ingrese su numero celular"required><br>
                     
+                    <table > 
+                      <tr>
+                        <td><label for="txtcontraseña">Contraseña</label></td>
+                        <td><input type="password" name="txtcontraseña" id="txtcontraseña" placeholder="Ingrese su contraseña"><br></td>
+                      </tr>
+                        <tr>
+                          <td><label for="txtrecontraseña">Contraseña</label></td>
+                          <td><input type="password" name="txtrecontraseña" id="txtrecontraseña" placeholder="Re-ingrese su contraseña"><br></td>
+                        </tr>
+                    </table>
                     <button type="submit" id="btnenviar" onclick="enviarFormulario()" >Enviar</button>
+                    <button type="button" id="btnlimpiar">Limpiar</button>
                     
-                  </form> 
+                  </form>
+                   
                 
           </div>            
           </form>
      </div>
-    <script>src="js/formulario.js"</script>  
-    
+  <script>src="js/formulario.js"</script>  
   <script src="js/messages_es.js"></script>
   <script>
     $(document).ready(function(){
       $('#formregistro').validate({
         debug:true,
-        rules: {
-          txtrut: {
-            required: true,
-            maxlength: 10,
-            minlength: 9,
-          },
-          txtnombrecompleto: {
-            required: true,
-          },
-          txtfechanacimiento: {
-            required: true,
-            date: true,
-            dateFormat: true,
-          },
-          txtcelular: {
-            required: true,
-            number: true,
-            minlength: 9,
-            maxlength: 9,
-            
-          },
-          txtemail: {
-            required: true,
-            email: true,
-          },
+        rules: {          
           txtcontraseña: {
             required: true,
             
@@ -116,11 +103,7 @@
             equalTo: "txtcontraseña"
           }
 
-        },
-        messages: {
-          txtrut: {
-            required : "El campo rut es requerido"
-          }
+        }
         }
       })
     })

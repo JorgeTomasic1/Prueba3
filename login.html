@@ -47,16 +47,20 @@
         </div>
         
     </header>
-     <div class="contenedorLogin">
-            <script>src="js/formulario.js"</script> 
-            <form  onsubmit="return validacionini(); " >
+    <script>src="js/formulario.js"</script>
+      <div class="row">
+      <div class="col">
+        <div class="contenedor">
+          <form class="form" onsubmit="return validaLogin();" method="POST">
+            
+            <div class="contenedorLogin">
                 <label for="txtnombreusuario"><b>Nombre Usuario</b></label>
                 <input type="text" name="txtnombreusuario" id="txtnombreusuario" placeholder="Ingrese nombre de usuario">
                 <br>
                 <label for="txtContraseña"><b>Contraseña</b></label>
                 <input type="Password" name="txtContraseña" id="txtContraseña" placeholder="Ingrese Contraseña">
 
-                <button type="submit" id="btnenviar" onclick="validacionini()" >iniciar</button>                
+                <button type="submit">Login</button>
 
                 <label>
                     <input type="checkbox" name="chkRecordar" id="chkRecordar"> Recordar sesion
@@ -64,11 +68,15 @@
                 <br>
                 <br>
                 <label>
-                   <ou> Si no tienes cuenta, <pa href="registro.html">registrate aquí</pa></ou>
+                    Si no tienes cuenta, <a href="registro.html">registrate aquí</a>
                 </label>
-            </form>
             </div>
+
             
+          </form>
+        </div> 
+      </div>
+    </div>
         <script>src="js/formulario.js"</script> 
         <script>function validacionini() {
             var txtnombreusuario = document.getElementById('txtnombreusuario').value;

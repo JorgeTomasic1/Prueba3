@@ -44,20 +44,38 @@ function validacionini() {
     var txtContraseña = document.getElementById('txtContraseña').value;
 
     if (txtnombreusuario.value == "") {
-        alert("ingrese su numero celular");
+        alert("ingrese su nombre de usuario");
         txtnombreusuario.focus();
         return false;
     }
     if (txtContraseña.value == "") {
-        alert("ingrese su numero celular");
+        alert("ingrese su contraseña");
         txtContraseña.focus();
         return false;
     }
 
 }
 
+function validaLogin() {
+    var nombreUsuario = document.getElementById('txtrut');
+    var contraseña = document.getElementById('txtContraseña');
+
+    if (nombreUsuario.value == "") {
+        alert("Ingrese su rut");
+        nombreUsuario.focus();
+        return false;
+    }
+
+    if (contraseña.value == "") {
+        alert("Ingrese su contraseña");
+        contraseña.focus();
+        return false;
+    }
+}
+
 $(function() {
-    $("#btnLimpiar").clic(function() {
+    $("#btnlimpiar").click(function() {
         $('input').val('');
     });
-});
+
+})
