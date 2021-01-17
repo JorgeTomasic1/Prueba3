@@ -45,16 +45,18 @@
         <div class="container">
                    
         </div>
+        
     </header>
      <div class="contenedorLogin">
-                <label for="txtrut"><b>Nombre Usuario</b></label>
-                <input type="text" name="txtrut" id="txtrut" placeholder="Ingrese rut">
+            <script>src="js/formulario.js"</script> 
+            <form  onsubmit="return validacionini(); " >
+                <label for="txtnombreusuario"><b>Nombre Usuario</b></label>
+                <input type="text" name="txtnombreusuario" id="txtnombreusuario" placeholder="Ingrese nombre de usuario">
                 <br>
                 <label for="txtContraseña"><b>Contraseña</b></label>
                 <input type="Password" name="txtContraseña" id="txtContraseña" placeholder="Ingrese Contraseña">
 
-                <button type="submit" >Login</button>
-                
+                <button type="submit" id="btnenviar" onclick="validacionini()" >iniciar</button>                
 
                 <label>
                     <input type="checkbox" name="chkRecordar" id="chkRecordar"> Recordar sesion
@@ -62,10 +64,25 @@
                 <br>
                 <br>
                 <label>
-                    Si no tienes cuenta, <a href="registro.html">registrate aquí</a>
+                   <ou> Si no tienes cuenta, <pa href="registro.html">registrate aquí</pa></ou>
                 </label>
+            </form>
             </div>
-
+            
+        <script>src="js/formulario.js"</script> 
+        <script>function validacionini() {
+            var txtnombreusuario = document.getElementById('txtnombreusuario').value;
+            var txtContraseña = document.getElementById('txtContraseña').value;
+                if (txtnombreusuario.value == "") {
+                    alert("ingrese su nombre de usuario");
+                    txtnombreusuario.focus();
+                    return false;
+                }
+                if (txtContraseña.value == "") {
+                    alert("ingrese su contraseña");
+                    txtContraseña.focus();
+                    return false;
+                }}</script>
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>

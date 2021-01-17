@@ -47,51 +47,37 @@
         </div>
     </header>
     <div class="row">
-      <div class="col">
-        <div class="contenedor">
-          <p>Registro de usuario</p>
-          <form action="" method="POST" class="registro" id="formregistro" >
-            <table style="width: 100%;">
-              <tr>
-                <td style="width: 10%;"><label for="txtrut">Rut</label></td>
-                <td><input type="text" name="txtrut" id="txtrut" placeholder="Ingrese su rut"><br></td>
-              </tr>
-              <tr>
-                <td ><label for="txtnombrecompleto">Nombre completo</label></td>
-                <td><input type="text" name="txtnombrecompleto" id="txtnombrecompleto" placeholder="Ingrese su nombre completo"><br></td>
-              </tr>
-              <tr>
-                <td><label for="txtfechanacimiendo">Fecha de nacimiento</label></td>
-                <td><input type="date" name="txtfechanacimiento" id="txtfechanacimiento"><br></td>
-              </tr>
-              <tr>
-                <td><label for="txtcelular">Teléfono celular</label></td>
-                <td><input type="tel" name="txtcelular" id="txtcelular" placeholder="Ingrese su teléfono celular"><br></td>
-              </tr>
-              <tr>
-                <td><label for="txtemail">Email</label></td>
-                <td><input type="email" name="txtemail" id="txtemail" placeholder="Ingrese su email"><br></td>
-              </tr>
-              <tr>
-                <td><label for="txtcontraseña">Contraseña</label></td>
-                <td><input type="password" name="txtcontraseña" id="txtcontraseña" placeholder="Ingrese su contraseña"><br></td>
-              </tr>
-              <tr>
-                <td><label for="txtrecontraseña">Contraseña</label></td>
-                <td><input type="password" name="txtrecontraseña" id="txtrecontraseña" placeholder="Re-ingrese su contraseña"><br></td>
-              </tr>
-            </table>
+        <div class="col">
+          <div class="contenedor">
+            <p>Registro de usuario</p> </div>
+            <form action="" method="POST" class="registro" id="formregistro" >
+              <table style="width: 100%;">
+               
+                  <script src="formulario.js"></script>
 
-            <hr>
-            <div class="botonera">
-              <button type="submit" id="btnguardar">Guardar</button>
-              <button type="button" id="btnlimpiar">Limpiar</button>
-            </div>
+                  <form action="#" onsubmit="return validacion(); " class="formulario">
+                    <label for="fname"> nombre:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="ingrese su  nombre completo" required><br>
+                    <label for="direccion">direccion:</label><br>
+                    <input type="text" id="direccion" name="direccion" placeholder="ingrese su direccion"  required><br><br>
+                    <label for="Nnume">numero direccion:</label><br>
+                    <input type="text" id="Ndire" name="Ndire"placeholder="ingrese su primenumero de direccion"  required><br><br>
+                    <label for="correo">Correo electronico</label><br>
+                    <input type="text" id="correo" name="correo"  placeholder="ingrese su email"required><br>
+                    <label for="fnaci">Fecha nacimiento</label><br>
+                    <input type="date" id="fnaci" name="fnaci" required><br>
+                    <label for="nmrcelular" >Numero celular</label><br>
+                    <input type="tel" id="nmrcelular " name="nmrcelular" placeholder="ingrese su numero celular"required><br>
+                    
+                    <button type="submit" id="btnenviar" onclick="enviarFormulario()" >Enviar</button>
+                    <button type="button" id="btnLimpiar" >Limpiar</button>
+                  </form> 
+                
+          </div>            
           </form>
-      </div>
-      </div>  
-    </div>
-    <script src="js/util.js"></script>
+     </div>
+    <script>src="js/formulario.js"</script>  
+    
   <script src="js/messages_es.js"></script>
   <script>
     $(document).ready(function(){
